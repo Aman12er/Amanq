@@ -395,4 +395,7 @@ p {
     display: flex;
     flex-direction: column;
   }
+    .row1 .card{margin-left:30px;}
+        
 }
+
