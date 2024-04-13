@@ -1,0 +1,398 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+background-color: rgba(4, 100, 4, 1);
+    padding: 10px 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    text-shadow: 2px 2px 2px green;
+
+  }
+  .textlogo{
+    margin-top: 2rem;
+  }
+  .logo img{
+    height: 5rem;
+    width: 5rem;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+    padding-top: 37px;
+    right: 0;
+    position: relative; /* Add this line */
+  }
+
+ 
+
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    margin-right:2rem;
+    color: white;
+    padding-top: 2rem;
+    text-shadow: 0 0 2px green;
+  }
+  nav ul li:hover{
+    border-bottom: 2px solid whitesmoke;
+    overflow: hidden;
+
+    
+
+  }
+
+  
+ .slidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, .1);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, .1);
+    display: none;
+   
+    flex-direction: column;
+    
+ }
+
+  
+  .video-section {
+    position: relative;
+    height: 100vh;
+   
+    width: 100%;
+  }
+  
+  .quotes{
+    margin-top: -5%;
+  }
+.quote{
+  padding-right: 30px;
+  padding-left: 0px;
+  font-size: 1.2rem;
+  color:#004d00;
+}
+.quotes span{
+  color:darkgreen;
+}
+  
+  
+  /* Adjust the duration and timing function as needed */
+  
+ .section1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ }
+ .text {
+ padding-left: 5%;
+  
+  height: 100%;
+  width: 100%;
+ }
+ .section1 .image img{ height: 100%;
+  width: 90%;
+  margin-top: 35%;
+
+  box-shadow: 
+  0 0 10px rgba(0, 100, 0, 0.5),
+  0 0 20px rgba(0, 100, 0, 0.4),
+  0 0 30px rgba(0, 100, 0, 0.3),
+  0 0 40px rgba(0, 100, 0, 0.2),
+  0 0 50px rgba(0, 100, 0, 0.1);
+
+  
+
+  border-radius: 20px;
+
+ }
+ .animate {
+  animation: slideUp 1s ease forwards;
+  font-size: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: green;
+  padding-top: 100px;
+  padding-right: 10%;
+  text-shadow: 2PX  2PX 2PX greenyellow;
+}
+
+.animate span {
+  opacity: 0;
+  animation: fadeIn 6s forwards infinite;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate span:nth-child(1) {
+  animation-delay: 0s;
+}
+.animate span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.animate span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.animate span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.animate span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.animate span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.animate span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.animate span:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.animate span:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.animate span:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+ .cardsection{
+  position: relative;
+  top: 5rem;
+  height: 100%;
+  width: 100%;
+ }
+  
+
+  .togimg{
+    display: none;
+  }
+  
+
+.row1{
+ 
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+ 
+
+}
+.row2{
+ 
+  
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.card{
+  border: solid black 2px;
+  align-items: center;
+  height: 15rem;
+  border-radius: 20px;
+  background-color: white;
+  width: 15rem;
+  margin: 70px;
+  display: flex;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.3s;
+  overflow: hidden;
+  margin-top: 10px;
+  position: relative;
+  left: -200%;
+
+  transition: left 1.5s ease-in-out;
+ }
+ .card:hover {
+  box-shadow: 0px 0px 10px rgba(4, 100, 4, 1); /* Shadow color on hover */
+}
+
+.card-image {
+  height: 50%; /* Height of the image section */
+  width: 100%;
+  background-image: url('https://via.placeholder.com/150'); /* Placeholder image */
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.card-content {
+  padding-bottom: 5px;
+}
+
+.card-link {
+  text-decoration: none;
+  color:darkgreen;
+ 
+}
+.card-link h3:hover{
+  border: none;
+  border-bottom: 2px solid darkgreen;
+}
+
+.read-more-btn {
+  margin-top: 1rem;
+  background-color: darkgreen;
+  color: white;
+  border: none;
+  margin-left:2rem ;
+  padding: .5rem 1rem;
+  -bottom: 10px;
+  cursor: pointer;
+  
+}
+
+.read-more-btn:hover {
+  background-color: yellowgreen;
+}
+  
+
+.hidden {
+  display: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.about-section {
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease-in-out;
+}
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+h1 {
+  font-size: 50px;
+  color: darkgreen;
+  text-shadow: 2px 2px 2px greenyellow;
+}
+p {
+  font-size: 16px;
+  color: darkgreen;
+}
+.farm-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+  animation: scaleIn 1s ease-in-out;
+}
+@keyframes scaleIn {
+  0% {
+      transform: scale(0.8);
+      opacity: 0;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+
+
+
+@media(max-width:800px){
+  .hideOnMobile{
+      display: none;
+  }
+  .togimg{
+      display: flex;
+  }
+  .logo {
+      font-size: .8rem;
+}
+.section1{
+  display: flex;
+  flex-direction: column-reverse;
+ 
+}
+.animate{
+  font-size: 48px;
+  margin-top: -20%;
+  padding-left: 7px;
+}
+.section1 .image img{
+  margin-top: 150px;
+  height: 200px;
+  width: 250px;
+  box-shadow: none;}
+
+  .quotes{
+    display: none;
+  }
+  .card{
+    width: 150px;
+    height: 200px;
+    margin-top: -29px;
+    
+    
+  }
+  .card-content h3 {
+    padding-bottom: 5px;
+    padding-left: 20px;
+  }
+  .row1 ,.row2{
+    display: flex;
+    flex-direction: column;
+  }
+}
